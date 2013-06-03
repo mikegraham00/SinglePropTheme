@@ -1,0 +1,566 @@
+/*   
+Theme Name: Single Property Theme
+Theme URI: 
+Description: 
+Author: Mike Graham
+Author URI: http://backbeatweb.com
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+@font-face {
+    font-family: 'MuseoSlab';
+    src: url('museo_slab_500-webfont.eot');
+    src: url('museo_slab_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('museo_slab_500-webfont.woff') format('woff'),
+         url('museo_slab_500-webfont.ttf') format('truetype'),
+         url('museo_slab_500-webfont.svg#MuseoSlab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+	background: transparent;
+	width: 100%;
+	/*display: table;*/
+	font-family: Helvetica, Arial, sans-serif;
+	min-width: 320px;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: MuseoSlab, Georgia, serif;
+	font-weight: normal;
+}
+
+/*static image page background that fills 100% of screen*/
+img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1250px;
+
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+
+        /* Set up positioning */
+        position: fixed;
+        top: 0px;
+        left: 0;
+        
+        z-index: -1;
+}
+
+/*fix for smaller screens*/
+
+
+/******HEADER**********/
+
+#header-wrap {
+	margin-top: 48px;
+	width: 100%;
+	height: 90px;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.8);
+	box-shadow: 0 2px 4px 2px #000;
+	color: #fff;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#header {
+	width: 90%;
+	min-width: 320px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+#branding {
+	width: 50%;
+	padding: 26px 0 0;
+	float: left;
+	margin: 0;
+}
+
+#blog-title {
+	font-size: 1.8em;
+	font-family: MuseoSlab, Georgia, serif;
+	font-weight: normal;
+	line-height: 38px;
+}
+
+#blog-title a {
+	color: #f9f9f9;
+	font-weight: normal;
+}
+
+#blog-title a:hover {
+	color: #d9d9d9;
+}
+
+#status {
+	color: #8CC63E;
+	text-transform: uppercase;
+}
+#access {
+	float: right;
+	text-align: right;
+	width: 40%;
+	padding: 26px 0;
+	border-bottom: none;
+	line-height: 38px;
+}
+
+.sf-menu {
+	border-right: none;
+	float: right;
+}
+
+.sf-menu li, .sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	background: transparent;
+	color: #fff000;
+}
+
+.sf-menu a, .sf-menu a:visited {
+	color: #fff;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.sf-menu li a {
+	color: #fff;
+	font-family: MuseoSlab, Georgia, serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border: none;
+}
+
+.sf-menu li a:hover {
+	background: transparent;
+	color: #d9d9d9;
+}
+
+#access .menu {
+	width: auto;
+}
+
+/******content******/
+
+#main {
+	width: 90%;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+}
+
+#main h1 {
+	font-size: 24px;
+	margin-bottom: 24px;
+	text-shadow: 0 1px #fff;
+}
+
+#main h2 {
+	font-size: 18px;
+	margin: 12px 0;
+	text-shadow: 0 1px #fff;
+	clear: left;
+}
+
+#home-page-feature {
+	text-align: right;
+	width: 80%;
+	margin: 0 auto;
+	padding: 48px 0;
+}
+
+#home-page-feature h1 {
+	font-size: 28px;
+	color: #fff;
+	text-shadow: 0 1px #000;
+}
+
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#content {
+	margin-left: 0;
+	position: relative;
+	width: 100%;
+}
+
+#content.home {
+	height: 450px;
+}
+
+#content.details {
+	float: left;
+	width: 61%;
+}
+
+#content.details, #content.gallery, #content.location {
+	
+	padding: 3%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 6px 1px #000;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.85) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.85)), color-stop(68%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(top,  rgba(255,255,255,0.85) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#content.location {
+	width: 61%;
+	float: left;
+}
+.mapp-container {
+	position: relative;
+	left: -12px;
+}
+
+#content.gallery {
+	width: 92%;
+	margin: 0 auto;
+}
+
+#gallery {
+	text-align: center;
+}
+
+.pscarousel {
+	margin: 10px auto !important;
+}
+
+#home-info {
+	overflow: hidden;
+}
+
+a#virtual-tour-link {
+	display: block;
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #CC6600;
+	padding-right: 24px;
+	background: transparent url(images/virtual-tour-link-bkg.png) top right no-repeat;
+}
+
+div#property-video {
+	
+	float: right;
+}
+
+a#showcase-video {
+	display: block;
+	float: right;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #CC6600;
+	padding-right: 24px;
+	margin-right: 8px;
+	background: transparent url(images/virtual-tour-link-bkg.png) top right no-repeat;
+}
+
+
+a#neighborhood-video {
+	display: block;
+	float: right;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #CC6600;
+	padding-right: 24px;
+	margin-right: 8px;
+	background: transparent url(images/virtual-tour-link-bkg.png) top right no-repeat;
+	position: relative;
+	top: 8px;
+}
+table.property-info-table {
+	width: 450px;
+	 border-color: none;
+    border-style: solid;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 12px 0 ;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+}
+
+.property-info-table tr {
+	border-bottom: none;
+}
+
+.property-info-table td {
+	width: 48%;
+	padding: 6px 0;
+}
+
+#schools-info {
+	float: left;
+	padding-top: 24px;
+}
+
+#schools-info table.property-info-table {
+	width: 340px;
+}
+
+#printable-info {
+	clear: right;
+	float: right;
+	width: 280px;
+	padding-top: 24px;
+}
+
+#printable-info ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#printable-info ul li a, #printable-info ul li a:link{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #8AC73C;
+}
+
+#printable-info ul li a:hover, #printable-info ul li a:visited, #printable-info ul li a:active {
+	color:  #057046;
+}
+
+
+
+
+/*******SIDEBAR**********/
+
+#contact-form {
+	width: 29%;
+	padding: 2%;
+	margin-top: 48px;
+	float: right;
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	
+}
+
+#contact-form.home {
+	width: 300px;
+	margin-top: 0;
+	float: none;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+	z-index: 999;
+}
+
+span#contact-toggle {
+	color: #fff;
+	padding: 3px 6px;
+	width: 100px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 3%;
+	background: #000;
+	
+	font-size: .8em;
+}
+
+#contact-toggle:hover {
+	color: #d9d9d9;
+}
+
+#contact-form h2 {
+	color: #fff;
+	font-size: 18px;
+	margin: 0 0 12px 0;
+	text-shadow: 0 1px #000;
+}
+
+#contact-form input[type="text"] {
+	width: 92%;
+	margin: 0 auto;
+	font-size: 18px;
+	height: 24px;
+	border: 2px solid #d9d9d9;
+	padding-left: 12px;
+}
+
+#contact-form textarea {
+	width: 92%;
+	height: 96px;
+	font-size: 18px;
+	padding-left: 12px;
+	border: 2px solid #d9d9d9;
+}
+
+#contact-form span {
+	display: block;
+	margin: 0 0;
+}
+
+#contact-form input[type="submit"] {
+	width: 164px;
+	height: 28px;
+	background: #8AC73C;
+	font-family: MuseoSlab, Georgia, serif;
+	text-transform: uppercase;
+	color: #000;
+	float: right;
+	border: none;
+	margin-right: 6px;
+	text-shadow: 0 1px #fff;
+}
+
+/***********FOOTER*************/
+
+#footer {
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.8);
+	padding: 36px 0;
+	width: 100%;
+}
+
+#footer-wrap {
+	width: 90%;
+	margin: 0 auto;
+	color: #f9f9f9;
+	overflow: hidden;
+}
+
+#footer-wrap #agent-info {
+	float: left;
+	margin-right: 36px;
+}
+
+#footer-wrap #agency-info {
+	float: right;
+	color: #d9d9d9;
+}
+
+#footer-wrap #agent-image {
+	float: left;
+}
+
+#footer-wrap #agent-image img {
+	background: #222;
+	padding: 0px;
+	float: left;
+	height: 160px;
+	margin-right: 24px;
+}
+
+#footer-wrap #agent {
+	float: left;
+}
+
+span.elite {
+	display: block;
+	float: left;
+	font: 0/0 a;
+	color: transparent;
+	width: 51px;
+	height: 14px;
+	background: transparent url(images/Elite25Logo-New.png) no-repeat;
+}
+
+#footer-wrap h2 {
+	font-family: MuseoSlab, Georgia, serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 0 1px #000;
+}
+
+#footer-wrap .agent-title {
+	color: #d9d9d9;
+	font-size: .8em;
+	margin-bottom: 76px;
+}
+
+#footer-wrap #agency-image {
+	margin-bottom: 23px;
+}
+
+
+#footer-wrap p {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3em;
+	font-size: .8em;
+}
+
+#footer-wrap a {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+
+#footer-wrap a:hover {
+	color: #d9d9d9;
+	text-decoration: underline;
+}
+
+/********CONTACT FORM 7**********/
+
+div.wpcf7-validation-errors {
+    border: none !important;
+    background: #FFBF4F;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: none !important;
+    background: #AFDDC5;
+}
+
+span.wpcf7-not-valid-tip {
+    background: none repeat scroll 0 0 #FFBF4F !important;
+    border: 1px solid #d9d9d9 !important;
+    font-size: 10pt;
+    left: 22% !important;
+    padding: 2px;
+    position: absolute;
+    top: 20%;
+    width: 200px !important;
+    z-index: 100;
+}

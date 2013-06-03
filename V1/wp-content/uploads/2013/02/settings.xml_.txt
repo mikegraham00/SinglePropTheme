@@ -1,0 +1,1781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<types>
+
+    <groups>
+
+        <group>
+
+            <ID>14</ID>
+
+            <post_content>Contains all display info for this page including the background image, etc.</post_content>
+
+            <post_title>Page Display</post_title>
+
+            <post_excerpt></post_excerpt>
+
+            <post_type>wp-types-group</post_type>
+
+            <post_status>publish</post_status>
+
+            <meta>
+
+                <_wp_types_group_fields>,page-background-image,</_wp_types_group_fields>
+
+                <_wp_types_group_post_types>,page,</_wp_types_group_post_types>
+
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+
+            </meta>
+
+        </group>
+
+        <group>
+
+            <ID>15</ID>
+
+            <post_content>All information about the listing agent.</post_content>
+
+            <post_title>Agent Info</post_title>
+
+            <post_excerpt></post_excerpt>
+
+            <post_type>wp-types-group</post_type>
+
+            <post_status>publish</post_status>
+
+            <meta>
+
+                <_wp_types_group_fields>,agent-title,agent-photo,agent-office-phone,agent-mobile-phone,agent-email-address,agent-website,agency,agency-address,agency-phone-number,agency-toll-free-number,agency-website,agency-logo,</_wp_types_group_fields>
+
+                <_wp_types_group_post_types>,agent,</_wp_types_group_post_types>
+
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+
+            </meta>
+
+        </group>
+
+        <group>
+
+            <ID>16</ID>
+
+            <post_content>Contains all listing info including listing price, MLS number, size, beds, baths, etc.</post_content>
+
+            <post_title>Listing Info</post_title>
+
+            <post_excerpt></post_excerpt>
+
+            <post_type>wp-types-group</post_type>
+
+            <post_status>publish</post_status>
+
+            <meta>
+
+                <_wp_types_group_fields>,list-price,status,mls-number,size,lot-size,beds,baths,half-baths,living-areas,garage-spaces,levels,dining-areas,property-taxes,builder,year-built,property-description,printable-flyer,floorplan,survey,sellers-disclosure,virtual-tour-url,lifestyle-video-url,lifestyle-video,lifestyle-video-title,property-video-code,</_wp_types_group_fields>
+
+                <_wp_types_group_post_types>,property,</_wp_types_group_post_types>
+
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+
+                <_wp_types_group_templates>all</_wp_types_group_templates>
+
+            </meta>
+
+        </group>
+
+        <group>
+
+            <ID>17</ID>
+
+            <post_content>Contains all location info for the property</post_content>
+
+            <post_title>Location Info</post_title>
+
+            <post_excerpt></post_excerpt>
+
+            <post_type>wp-types-group</post_type>
+
+            <post_status>publish</post_status>
+
+            <meta>
+
+                <_wp_types_group_fields>,street-address,city,state,zip,area,subdivision,location-comments,elementary,middle-school,high-school,</_wp_types_group_fields>
+
+                <_wp_types_group_post_types>,property,</_wp_types_group_post_types>
+
+                <_wp_types_group_terms>all</_wp_types_group_terms>
+
+            </meta>
+
+        </group>
+
+    </groups>
+
+    <fields>
+
+        <field>
+
+            <id>street-address</id>
+
+            <name>Street Address</name>
+
+            <description>Describe this field</description>
+
+            <type>textfield</type>
+
+            <slug>street-address</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>city</id>
+
+            <name>City</name>
+
+            <description>Describe this field</description>
+
+            <type>textfield</type>
+
+            <slug>city</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>state</id>
+
+            <name>State</name>
+
+            <description>2 letter abbreviation please.</description>
+
+            <type>textfield</type>
+
+            <slug>state</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>zip</id>
+
+            <name>ZIP</name>
+
+            <description>5 digit ZIP code</description>
+
+            <type>textfield</type>
+
+            <slug>zip</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>list-price</id>
+
+            <slug>list-price</slug>
+
+            <type>textfield</type>
+
+            <name>List Price</name>
+
+            <description>The property\&#039;s list price. Please include currency and commas, etc.
+
+EX: $1,500,000</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>size</id>
+
+            <slug>size</slug>
+
+            <type>textfield</type>
+
+            <name>Size</name>
+
+            <description>Size in square feet.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>lot-size</id>
+
+            <slug>lot-size</slug>
+
+            <type>textfield</type>
+
+            <name>Lot Size</name>
+
+            <description>Size of the lot in acres or sqft.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>beds</id>
+
+            <slug>beds</slug>
+
+            <type>numeric</type>
+
+            <name>Beds</name>
+
+            <description>Number of bedrooms</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>baths</id>
+
+            <slug>baths</slug>
+
+            <type>numeric</type>
+
+            <name>Baths</name>
+
+            <description>Number of bathrooms</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>living-areas</id>
+
+            <slug>living-areas</slug>
+
+            <type>numeric</type>
+
+            <name>Living Areas</name>
+
+            <description>Number of living areas</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>garage-spaces</id>
+
+            <slug>garage-spaces</slug>
+
+            <type>numeric</type>
+
+            <name>Garage Spaces</name>
+
+            <description>Number of garage parking spaces</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>levels</id>
+
+            <slug>levels</slug>
+
+            <type>numeric</type>
+
+            <name>Levels</name>
+
+            <description>Number of levels or stories</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>dining-areas</id>
+
+            <slug>dining-areas</slug>
+
+            <type>numeric</type>
+
+            <name>Dining Areas</name>
+
+            <description>Number of dining areas</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>year-built</id>
+
+            <slug>year-built</slug>
+
+            <type>textfield</type>
+
+            <name>Year Built</name>
+
+            <description>Year this home was completed.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>builder</id>
+
+            <slug>builder</slug>
+
+            <type>textfield</type>
+
+            <name>Builder</name>
+
+            <description>Name of the homebuilder.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>taxes</id>
+
+            <name>Taxes</name>
+
+            <description>Estimated yearly property taxes</description>
+
+            <type>numeric</type>
+
+            <slug>taxes</slug>
+
+            <data>
+
+                <validate>
+
+                    <number>
+
+                        <active>1</active>
+
+                        <message>Please enter a number</message>
+
+                    </number>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>area</id>
+
+            <name>Area</name>
+
+            <description>MLS area designation.
+EX: LS/78734/Lakeway</description>
+
+            <type>textfield</type>
+
+            <slug>area</slug>
+
+        </field>
+
+        <field>
+
+            <id>subdivision</id>
+
+            <name>Subdivision</name>
+
+            <description>Name of the subdivision or community where this property is located.
+EX: Cimmaron Hills</description>
+
+            <type>textfield</type>
+
+            <slug>subdivision</slug>
+
+        </field>
+
+        <field>
+
+            <id>location-comments</id>
+
+            <name>Location Comments</name>
+
+            <description>Any additional useful info about the property\&#039;s location.</description>
+
+            <type>textfield</type>
+
+            <slug>location-comments</slug>
+
+        </field>
+
+        <field>
+
+            <id>property-description</id>
+
+            <slug>property-description</slug>
+
+            <type>textarea</type>
+
+            <name>Property Description</name>
+
+            <description>Long description of the property, location, amenities, etc</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>title</id>
+
+            <name>Title</name>
+
+            <description>Title to be displayed with agent name. May include all certifications, accreditations, etc.
+EX1: Broker Associate, ABR, CLHMS, CRS, GRI
+EX2: Agent</description>
+
+            <type>textfield</type>
+
+            <slug>title</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>agency</id>
+
+            <name>Agency</name>
+
+            <description>The real estate agency where the agent is employed</description>
+
+            <type>textfield</type>
+
+            <slug>agency</slug>
+
+        </field>
+
+        <field>
+
+            <id>agency-address</id>
+
+            <name>Agency Address</name>
+
+            <description>The agency\&#039;s physical address</description>
+
+            <type>textfield</type>
+
+            <slug>agency-address</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-website</id>
+
+            <name>Agent Website</name>
+
+            <description>The URL of the agent\&#039;s website.</description>
+
+            <type>url</type>
+
+            <slug>agent-website</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-office-phone</id>
+
+            <name>Agent Office Phone</name>
+
+            <description>The office phone to display to site visitors.</description>
+
+            <type>phone</type>
+
+            <slug>agent-office-phone</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-mobile-phone</id>
+
+            <name>Agent Mobile Phone</name>
+
+            <description>The agent mobile phone number to display to site visitors.</description>
+
+            <type>phone</type>
+
+            <slug>agent-mobile-phone</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-email-address</id>
+
+            <name>Agent Email Address</name>
+
+            <description>The email address to display to site visitors.</description>
+
+            <type>email</type>
+
+            <slug>agent-email-address</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This Field is required</message>
+
+                    </required>
+
+                    <email>
+
+                        <active>1</active>
+
+                        <message>Please enter a valid email address</message>
+
+                    </email>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>agency-phone-number</id>
+
+            <name>Agency Phone Number</name>
+
+            <description>The real estate agency\&#039;s office phone number.</description>
+
+            <type>phone</type>
+
+            <slug>agency-phone-number</slug>
+
+        </field>
+
+        <field>
+
+            <id>agency-toll-free-number</id>
+
+            <name>Agency Toll Free Number</name>
+
+            <description>The agency\&#039;s toll free number (if available)</description>
+
+            <type>phone</type>
+
+            <slug>agency-toll-free-number</slug>
+
+        </field>
+
+        <field>
+
+            <id>agency-logo</id>
+
+            <name>Agency Logo</name>
+
+            <description>The agency\&#039;s logo image file.</description>
+
+            <type>image</type>
+
+            <slug>agency-logo</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-photo</id>
+
+            <name>Agent Photo</name>
+
+            <description>The agent\&#039;s promotional photo or headshot.</description>
+
+            <type>image</type>
+
+            <slug>agent-photo</slug>
+
+        </field>
+
+        <field>
+
+            <id>agent-title</id>
+
+            <name>Agent Title</name>
+
+            <description>Title to be displayed with agent name. May include all certifications, accreditations, etc.
+EX1: Broker Associate, ABR, CLHMS, CRS, GRI
+EX2: Agent</description>
+
+            <type>textfield</type>
+
+            <slug>agent-title</slug>
+
+            <data>
+
+                <validate>
+
+                    <required>
+
+                        <active>1</active>
+
+                        <value>true</value>
+
+                        <message>This field is required</message>
+
+                    </required>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>agency-website</id>
+
+            <name>Agency Website</name>
+
+            <description>URL of the agency\&#039;s website.</description>
+
+            <type>url</type>
+
+            <slug>agency-website</slug>
+
+            <data>
+
+                <validate>
+
+                    <url>
+
+                        <active>1</active>
+
+                        <message>Please enter a valid URL address</message>
+
+                    </url>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>page-background-image</id>
+
+            <name>Page Background Image</name>
+
+            <description>The image to be displayed as the page background.</description>
+
+            <type>image</type>
+
+            <slug>page-background-image</slug>
+
+        </field>
+
+        <field>
+
+            <id>printable-flyer</id>
+
+            <slug>printable-flyer</slug>
+
+            <type>file</type>
+
+            <name>Printable Flyer</name>
+
+            <description>The PDF version of the property\&#039;s printable flyer</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>floorplan</id>
+
+            <slug>floorplan</slug>
+
+            <type>file</type>
+
+            <name>Floorplan</name>
+
+            <description>The printable floorplan file (PDF)</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>survey</id>
+
+            <slug>survey</slug>
+
+            <type>file</type>
+
+            <name>Survey</name>
+
+            <description>The printable survey file (PDF)</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>sellers-disclosure</id>
+
+            <slug>sellers-disclosure</slug>
+
+            <type>file</type>
+
+            <name>Sellers Disclosure</name>
+
+            <description>The printable sellers disclosure file (PDF)</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>virtual-tour-url</id>
+
+            <slug>virtual-tour-url</slug>
+
+            <type>url</type>
+
+            <name>Virtual Tour URL</name>
+
+            <description>The URL of the virtual tour</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <url>
+
+                        <active>1</active>
+
+                        <message>Please enter a valid URL address</message>
+
+                    </url>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>property-taxes</id>
+
+            <slug>property-taxes</slug>
+
+            <type>textfield</type>
+
+            <name>Property Taxes</name>
+
+            <description>The property\&#039;s estimated yearly property taxes.
+
+EX: $42,000</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>elementary</id>
+
+            <name>Elementary</name>
+
+            <description>Elementary school district wherein this property is located.</description>
+
+            <type>textfield</type>
+
+            <slug>elementary</slug>
+
+        </field>
+
+        <field>
+
+            <id>middle-school</id>
+
+            <name>Middle School</name>
+
+            <description>Middle School district wherein this property is located.</description>
+
+            <type>textfield</type>
+
+            <slug>middle-school</slug>
+
+        </field>
+
+        <field>
+
+            <id>high-school</id>
+
+            <name>High School</name>
+
+            <description>High school district wherein this property is located.</description>
+
+            <type>textfield</type>
+
+            <slug>high-school</slug>
+
+        </field>
+
+        <field>
+
+            <id>mls-number</id>
+
+            <slug>mls-number</slug>
+
+            <type>textfield</type>
+
+            <name>MLS Number</name>
+
+            <description>MLS listing number of this property.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>property-video-code</id>
+
+            <slug>property-video-code</slug>
+
+            <type>textarea</type>
+
+            <name>Property Video Code</name>
+
+            <description>code to embed the property video.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>half-baths</id>
+
+            <slug>half-baths</slug>
+
+            <type>textfield</type>
+
+            <name>Half Baths</name>
+
+            <description>Number of half bathrooms.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>lakefront-lifestyle-video-url</id>
+
+            <name>Lakefront Lifestyle Video URL</name>
+
+            <description>Enter the YouTube URL for the Lakefront Lifestyle Video</description>
+
+            <type>url</type>
+
+            <slug>lakefront-lifestyle-video-url</slug>
+
+            <data>
+
+                <validate>
+
+                    <url>
+
+                        <active>1</active>
+
+                        <message>Please enter a valid URL address</message>
+
+                    </url>
+
+                </validate>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>status</id>
+
+            <slug>status</slug>
+
+            <type>textfield</type>
+
+            <name>Status</name>
+
+            <description>Leave blank for open, otherwise enter the status.
+
+EX: Pending, Sold, Under Contract, etc.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>lifestyle-video-url</id>
+
+            <slug>lifestyle-video-url</slug>
+
+            <type>url</type>
+
+            <name>Lifestyle Video URL</name>
+
+            <description>Select the YouTube URL for the Lifestyle Video</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <validate>
+
+                    <url>
+
+                        <active>1</active>
+
+                        <message>Please enter a valid URL address</message>
+
+                    </url>
+
+                </validate>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>lifestyle-video-title</id>
+
+            <slug>lifestyle-video-title</slug>
+
+            <type>textfield</type>
+
+            <name>Lifestyle Video Title</name>
+
+            <description>Enter the title for the lifestyle video.
+
+EX: \&quot;Lakefront Lifestyle Video\&quot;.</description>
+
+            <data>
+
+                <repetitive>0</repetitive>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+        <field>
+
+            <id>lifestyle-video</id>
+
+            <slug>lifestyle-video</slug>
+
+            <type>select</type>
+
+            <name>LIfestyle Video</name>
+
+            <description>Select the corresponding area lifestyle video.</description>
+
+            <data>
+
+                <options>
+
+                    <wpcf-fields-select-option-7b736b821adb5cd0a2a7d03a6759a9fd-2>
+
+                        <title>Westlake &amp; Barton Creek</title>
+
+                        <value>http://www.youtube.com/embed/R9NR6cxOAMQ?rel=0</value>
+
+                    </wpcf-fields-select-option-7b736b821adb5cd0a2a7d03a6759a9fd-2>
+
+                    <wpcf-fields-select-option-40b8984a8194f4947e39efc802db42e9-1>
+
+                        <title>West Austin</title>
+
+                        <value>http://www.youtube.com/embed/BDFdC5UWODs&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-40b8984a8194f4947e39efc802db42e9-1>
+
+                    <wpcf-fields-select-option-e6ccad9a322e06c6f3140ecbf6cab441-1>
+
+                        <title>Lakeway &amp; Lake Travis</title>
+
+                        <value>http://www.youtube.com/embed/rrgu5ewlYTw&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-e6ccad9a322e06c6f3140ecbf6cab441-1>
+
+                    <wpcf-fields-select-option-3f2b8528ba3ba2877e5ffdc18bd5ad1f-1>
+
+                        <title>Lake Austin</title>
+
+                        <value>http://www.youtube.com/embed/R7BKUbwU6Uc&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-3f2b8528ba3ba2877e5ffdc18bd5ad1f-1>
+
+                    <wpcf-fields-select-option-1c35d488c15466594d7c0c249c6784a2-1>
+
+                        <title>Central Austin</title>
+
+                        <value>http://www.youtube.com/embed/O-mpWRbFopc&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-1c35d488c15466594d7c0c249c6784a2-1>
+
+                    <wpcf-fields-select-option-79730b32460c3c7e0bc67af174cc45ef-1>
+
+                        <title>UT &amp; Hyde Park</title>
+
+                        <value>http://www.youtube.com/embed/3O28H1Pzilg&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-79730b32460c3c7e0bc67af174cc45ef-1>
+
+                    <wpcf-fields-select-option-4a6eb58cfc62befed25464c6b9ce7bdb-1>
+
+                        <title>S. Central &amp; Travis Heights</title>
+
+                        <value>http://www.youtube.com/embed/X3lQLuOmI5c&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-4a6eb58cfc62befed25464c6b9ce7bdb-1>
+
+                    <wpcf-fields-select-option-92e5faf2a0fd43bb05a504ada1d4a4bc-1>
+
+                        <title>Northwest Hills</title>
+
+                        <value>http://www.youtube.com/embed/-XGy0g6GoaI&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-92e5faf2a0fd43bb05a504ada1d4a4bc-1>
+
+                    <wpcf-fields-select-option-24189eafa0e90e41aa5978890e06a9b8-1>
+
+                        <title>Downtown</title>
+
+                        <value>http://www.youtube.com/embed/_1pqAux1T3Q&amp;feature=share&amp;list=PLB3E73F22472F74C1?rel=0</value>
+
+                    </wpcf-fields-select-option-24189eafa0e90e41aa5978890e06a9b8-1>
+
+                </options>
+
+                <conditional_display>
+
+                    <relation>AND</relation>
+
+                    <custom></custom>
+
+                </conditional_display>
+
+                <disabled_by_type>0</disabled_by_type>
+
+            </data>
+
+        </field>
+
+    </fields>
+
+    <types>
+
+        <type>
+
+            <wpcf-post-type>property</wpcf-post-type>
+
+            <labels>
+
+                <name>Properties</name>
+
+                <singular_name>Property</singular_name>
+
+                <add_new>Add New</add_new>
+
+                <add_new_item>Add New %s</add_new_item>
+
+                <edit_item>Edit %s</edit_item>
+
+                <new_item>New %s</new_item>
+
+                <view_item>View %s</view_item>
+
+                <search_items>Search %s</search_items>
+
+                <not_found>No %s found</not_found>
+
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+
+                <parent_item_colon>Parent %s</parent_item_colon>
+
+                <all_items>%s</all_items>
+
+            </labels>
+
+            <slug>property</slug>
+
+            <description>Contains all informaton about the property.</description>
+
+            <public>public</public>
+
+            <menu_position>2</menu_position>
+
+            <supports>
+
+                <title>1</title>
+
+            </supports>
+
+            <rewrite>
+
+                <enabled>1</enabled>
+
+                <custom>normal</custom>
+
+                <with_front>1</with_front>
+
+                <feeds>1</feeds>
+
+                <pages>1</pages>
+
+            </rewrite>
+
+            <has_archive>1</has_archive>
+
+            <show_in_menu>1</show_in_menu>
+
+            <show_ui>1</show_ui>
+
+            <publicly_queryable>1</publicly_queryable>
+
+            <can_export>1</can_export>
+
+            <query_var_enabled>1</query_var_enabled>
+
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+
+            <id>property</id>
+
+        </type>
+
+        <type>
+
+            <labels>
+
+                <name>Agents</name>
+
+                <singular_name>Agent</singular_name>
+
+                <add_new>Add New</add_new>
+
+                <add_new_item>Add New %s</add_new_item>
+
+                <edit_item>Edit %s</edit_item>
+
+                <new_item>New %s</new_item>
+
+                <view_item>View %s</view_item>
+
+                <search_items>Search %s</search_items>
+
+                <not_found>No %s found</not_found>
+
+                <not_found_in_trash>No %s found in Trash</not_found_in_trash>
+
+                <parent_item_colon>Parent %s</parent_item_colon>
+
+                <all_items>%s</all_items>
+
+            </labels>
+
+            <slug>agent</slug>
+
+            <public>public</public>
+
+            <menu_position>3</menu_position>
+
+            <supports>
+
+                <title>1</title>
+
+            </supports>
+
+            <rewrite>
+
+                <enabled>1</enabled>
+
+                <custom>normal</custom>
+
+                <with_front>1</with_front>
+
+                <feeds>1</feeds>
+
+                <pages>1</pages>
+
+            </rewrite>
+
+            <has_archive>1</has_archive>
+
+            <show_in_menu>1</show_in_menu>
+
+            <show_ui>1</show_ui>
+
+            <publicly_queryable>1</publicly_queryable>
+
+            <can_export>1</can_export>
+
+            <show_in_nav_menus>1</show_in_nav_menus>
+
+            <query_var_enabled>1</query_var_enabled>
+
+            <permalink_epmask>EP_PERMALINK</permalink_epmask>
+
+            <id>agent</id>
+
+        </type>
+
+    </types>
+
+</types>
